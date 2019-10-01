@@ -57,3 +57,22 @@ if(kayaking.includes('yes') && lovesCoffee.includes('yes') && newZealand.include
   console.log('Invalid Answer');
   alert('Huh? That\'s not a yes or no answer...');
 }
+
+var attendedCollegeInArizona = prompt('Did I study at University in California?');
+attendedCollegeInArizona = attendedCollegeInArizona.toLowerCase();
+
+if(attendedCollegeInArizona.includes('no') && kayaking.includes('yes') && lovesCoffee.includes('yes') && newZealand.includes('no')) {
+  console.log(attendedCollegeInArizona);
+  alert('Amazing! Correct again! Four times in a row! I have not yet done any studying in California. I attended the University of Arizona in Tucson, AZ. Go Wildcats!');
+  alert('Ok! Perfect 4 for 4 so far! Last question....');
+} else if(attendedCollegeInArizona.includes('no')) {
+  console.log(attendedCollegeInArizona);
+  alert('Correct! I have not yet done any studying in California. I attended the University of Arizona in Tucson, AZ. Go Wildcats!');
+} else if(attendedCollegeInArizona.includes('yes')) {
+  console.log(attendedCollegeInArizona);
+  alert('Incorrect. I have not yet done any studying in California. I attended the University of Arizona in Tucson, AZ. Go Wildcats!');
+} else {
+  console.log(attendedCollegeInArizona);
+  console.log('Invalid Answer');
+  alert('Huh? That\'s not a yes or no answer...');
+}
