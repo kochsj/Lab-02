@@ -76,3 +76,22 @@ if(attendedCollegeInArizona.includes('no') && kayaking.includes('yes') && lovesC
   console.log('Invalid Answer');
   alert('Huh? That\'s not a yes or no answer...');
 }
+
+var lengthOfEmployment = prompt('Have I been employed with any company for over 10 years?');
+var lengthOfEmployment = lengthOfEmployment.toLowerCase();
+
+if(lengthOfEmployment.includes('yes') && attendedCollegeInArizona.includes('no') && kayaking.includes('yes') && lovesCoffee.includes('yes') && newZealand.includes('no')) {
+  console.log(lengthOfEmployment);
+  alert('Correct!!! We must be related... I have been employed with TJMaxx for 11 years. Full time for 7 years and in management for 5 years.');
+  alert('!PERFECT SCORE! CONGRATULATIONS!');
+} else if(lengthOfEmployment.includes('yes')) {
+  console.log(lengthOfEmployment);
+  alert('Correct! I have been employed with TJMaxx for 11 years. Full time for 7 years and in management for 5 years.');
+} else if(lengthOfEmployment.includes('no')) {
+  console.log(lengthOfEmployment);
+  alert('Incorrect. I have been employed with TJMaxx for 11 years. Full time for 7 years and in management for 5 years.');
+} else {
+  console.log(lengthOfEmployment);
+  console.log('Invalid Answer');
+  alert('Huh? That\'s not a yes or no answer...');
+}
