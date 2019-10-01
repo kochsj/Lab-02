@@ -20,3 +20,23 @@ if(lovesCoffee.includes('yes')) {
 }
 
 var newZealand = prompt('Was I born in New Zealand?');
+newZealand = newZealand.toLowerCase();
+
+if(newZealand.includes('yes')) {
+  console.log(newZealand);
+  console.log('Incorrect. I would love to visit but I was actually born in Montana.');
+  alert('Incorrect. I would love to visit but I was actually born in Montana.');
+} else if(newZealand.includes('no') && lovesCoffee.includes('yes')) {
+  console.log(newZealand);
+  console.log('Correct Again!!! It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+  alert('Correct Again!!! It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+} else if(newZealand.includes('no')) {
+  console.log(newZealand);
+  console.log('Correct! It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+  alert('Correct! It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+} else {
+  console.log(newZealand);
+  console.log('Huh?');
+  alert('Huh?');
+}
+
