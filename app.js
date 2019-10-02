@@ -1,5 +1,6 @@
 'use strict';
 
+var userScore = [];
 alert('Hello and Welcome! Let\'s play a game! My name is Stephen and I have a few yes or no questions for you... about me!');
 alert('Actually, one question about you...');
 
@@ -148,5 +149,35 @@ for(var i = 0; i < 4; i++) {
   } else {
     alert('Very close! A little too low.');
     console.log('too low');
+  }
+}
+
+var countriesIVisitied = ['korea', 'china', 'mexico', 'canada', 'croatia', 'germany'];
+
+for(var y = 0; y < 6; y++) {
+  var nameACountry = prompt('Name another country that I have been to outside of The United States. You have 6 tries to get it right!');
+  nameACountry = nameACountry.toLowerCase();
+  console.log(nameACountry);
+
+  if(nameACountry === countriesIVisitied[0]) {
+    console.log('korea!! correct');
+    y = 6;
+  } else if(nameACountry === countriesIVisitied[1]) {
+    console.log('china!! correct');
+    y = 6;
+  } else if(nameACountry === countriesIVisitied[2]) {
+    console.log('mexico!! correct');
+    y = 6;
+  } else if(nameACountry === countriesIVisitied[3]) {
+    console.log('canada!! correct');
+    y = 6;
+  } else if(nameACountry === countriesIVisitied[4]) {
+    console.log('croatia!! correct');
+    y = 6;
+  } else if(nameACountry === countriesIVisitied[5]) {
+    console.log('germany!! correct');
+    y = 6;
+  } else {
+    console.log('sorry incorrect');
   }
 }
