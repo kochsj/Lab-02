@@ -181,3 +181,9 @@ for(var y = 0; y < 6; y++) {
     console.log('sorry incorrect');
   }
 }
+
+var totalScore = 0;
+
+for(var z = 0; z < 7; z++) {
+  totalScore = totalScore + userScore[z];
+}
