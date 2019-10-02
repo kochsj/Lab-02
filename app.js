@@ -130,3 +130,23 @@ if(lengthOfEmployment.includes('yes') && attendedCollegeInArizona.includes('no')
   alert('Huh? That\'s not a yes or no answer...');
   alert('Hope you enjoyed the game ' + userFirstName + ' and welcome again to my webpage!');
 }
+
+for(var i = 0; i < 4; i++) {
+  var guessNumber = prompt('Guess a number between 1 and 10. You will have 4 chances to guess correctly!');
+  guessNumber = Number(guessNumber);
+  console.log('prompt the user');
+  if(guessNumber === 3) {
+    console.log('correct');
+    alert('Correct! Nice work ' + userFirstName + '!');
+    i = 4;
+  } else if(guessNumber > 3 && guessNumber < 5) {
+    alert('Very close! A little too high.');
+    console.log('too high');
+  } else if(guessNumber >= 5) {
+    alert('Too high. Guess lower.');
+    console.log('too high');
+  } else {
+    alert('Very close! A little too low.');
+    console.log('too low');
+  }
+}
