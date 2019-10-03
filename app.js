@@ -143,6 +143,7 @@ if(lengthOfEmployment.includes('yes') && attendedCollegeInArizona.includes('no')
 //   console.log('Invalid Answer');
   alert('Huh? That\'s not a yes or no answer...');
   userScore.push(0);
+  //counter++; you could make a var counter that adds one to the score when answered correctly.
 }
 
 for(var i = 0; i < 4; i++) {
@@ -176,6 +177,7 @@ alert('Last question..... You can do it!');
 
 var countriesIVisitied = ['korea', 'china', 'mexico', 'canada', 'croatia', 'germany'];
 
+//var numberOfGuesses = 6;
 for(var y = 0; y < 6; y++) {
   var nameACountry = prompt('Name a Country that I have been to outside of The United States. You have 6 tries to get it right!');
   nameACountry = nameACountry.toLowerCase();
