@@ -11,25 +11,28 @@ alert('Hi ' + userFirstName + '! Hope you enjoy the game I made for you! 7 quest
 var lovesCoffee = prompt('Do I like coffee?');
 lovesCoffee = lovesCoffee.toLowerCase();
 
-if(lovesCoffee.includes('yes')) {
-//   console.log(lovesCoffee);
-//   console.log('Correct');
-  alert('Correct! Nice work ' + userFirstName + '!');
-  alert('I love coffee! CoffeeCoffeeCoffee!');
-  userScore.push(1);
-} else if(lovesCoffee.includes('no')){
-//   console.log(lovesCoffee);
-//   console.log('Incorrect.');
-  alert('Sorry. That is not correct ' + userFirstName + '.');
-  alert('I don\'t like coffee... I LOVE it! I don\'t think I could survive without it!');
-  userScore.push(0);
-} else {
-//   console.log(lovesCoffee);
-//   console.log('Invalid Answer');
-  alert('Huh? That\'s not a yes or no answer...');
-  userScore.push(0);
-}
+function doILikeCoffee() {
 
+  if(lovesCoffee.includes('yes')) {
+  //   console.log(lovesCoffee);
+  //   console.log('Correct');
+    alert('Correct! Nice work ' + userFirstName + '!');
+    alert('I love coffee! CoffeeCoffeeCoffee!');
+    userScore.push(1);
+  } else if(lovesCoffee.includes('no')){
+  //   console.log(lovesCoffee);
+  //   console.log('Incorrect.');
+    alert('Sorry. That is not correct ' + userFirstName + '.');
+    alert('I don\'t like coffee... I LOVE it! I don\'t think I could survive without it!');
+    userScore.push(0);
+  } else {
+  //   console.log(lovesCoffee);
+  //   console.log('Invalid Answer');
+    alert('Huh? That\'s not a yes or no answer...');
+    userScore.push(0);
+  }
+}
+doILikeCoffee();
 var newZealand = prompt('Was I born in New Zealand?');
 newZealand = newZealand.toLowerCase();
 
@@ -218,10 +221,10 @@ for(var y = 0; y < 6; y++) {
     alert('Sorry. That is not correct ' + userFirstName + '. ' + (5 - y) + ' chances remaining.');
     userScore.push(0);
   }
-  // if(i === 4) {
-  //   console.log('zero score');
-  //   userScore.push(0);
-  // }
+//   // if(i === 4) {
+//   //   console.log('zero score');
+//   //   userScore.push(0);
+//   // }
 }
 
 alert('I have been to six countries other than The United States. I have been to Korea, China, Germany, Croatia, Canada and Mexico. China was my favorite!');
