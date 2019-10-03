@@ -1,15 +1,21 @@
 'use strict';
 
+
 var userScore = [];
 alert('Hello and Welcome! Let\'s play a guessing game! My name is Stephen and I have a few yes or no questions for you... about me!');
 alert('Actually, one question about you first...');
 
+
+
 var userFirstName = prompt('What is your first name?');
+
 
 alert('Hi ' + userFirstName + '! Hope you enjoy the game I made for you! 7 questions - Take you\'re best guesses!');
 
+
 var lovesCoffee = prompt('Do I like coffee?');
 lovesCoffee = lovesCoffee.toLowerCase();
+
 
 function doILikeCoffee() {
 
@@ -24,71 +30,81 @@ function doILikeCoffee() {
   //   console.log('Incorrect.');
     alert('Sorry. That is not correct ' + userFirstName + '.');
     alert('I don\'t like coffee... I LOVE it! I don\'t think I could survive without it!');
-    userScore.push(0);
+    // userScore.push(0);
   } else {
   //   console.log(lovesCoffee);
   //   console.log('Invalid Answer');
     alert('Huh? That\'s not a yes or no answer...');
-    userScore.push(0);
+    // userScore.push(0);
   }
 }
-doILikeCoffee();
+
 var newZealand = prompt('Was I born in New Zealand?');
 newZealand = newZealand.toLowerCase();
 
-if(newZealand.includes('yes')) {
-//   console.log(newZealand);
-//   console.log('Incorrect.');
-  alert('Sorry. That is not correct ' + userFirstName + '.');
-  alert('I would love to visit but I was actually born in Montana.');
-  userScore.push(0);
-} else if(newZealand.includes('no') && lovesCoffee.includes('yes')) {
-//   console.log(newZealand);
-//   console.log('Correct');
-  alert('Correct again ' + userFirstName + '!!!');
-  alert('It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
-  userScore.push(1);
-} else if(newZealand.includes('no')) {
-//   console.log(newZealand);
-//   console.log('Correct');
-  alert('Correct! Nice work ' + userFirstName + '!');
-  alert('It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
-  userScore.push(1);
-} else {
-//   console.log(newZealand);
-//   console.log('Invalid Answer');
-  alert('Huh? That\'s not a yes or no answer...');
-  userScore.push(0);
+function iWasBorn() {
+
+
+
+  if(newZealand.includes('yes')) {
+    //   console.log(newZealand);
+    //   console.log('Incorrect.');
+    alert('Sorry. That is not correct ' + userFirstName + '.');
+    alert('I would love to visit but I was actually born in Montana.');
+    userScore.push(0);
+  } else if(newZealand.includes('no') && lovesCoffee.includes('yes')) {
+    //   console.log(newZealand);
+    //   console.log('Correct');
+    alert('Correct again ' + userFirstName + '!!!');
+    alert('It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+    userScore.push(1);
+  } else if(newZealand.includes('no')) {
+    //   console.log(newZealand);
+    //   console.log('Correct');
+    alert('Correct! Nice work ' + userFirstName + '!');
+    alert('It is a dream of mine to visit New Zealand someday. I was actually born in Montana.');
+    userScore.push(1);
+  } else {
+    //   console.log(newZealand);
+    //   console.log('Invalid Answer');
+    alert('Huh? That\'s not a yes or no answer...');
+  // userScore.push(0);
+  }
 }
+
 
 var kayaking = prompt('Have I kayaked across the Puget Sound?');
 kayaking = kayaking.toLowerCase();
 
-if(kayaking.includes('yes') && lovesCoffee.includes('yes') && newZealand.includes('no')) {
-//   console.log(kayaking);
-//   console.log('Correct');
-  alert('Wow! Correct!! Again!!! It\'s like you know me already ' + userFirstName + '....');
-  alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
-  userScore.push(1);
-} else if(kayaking.includes('yes')) {
-//   console.log(kayaking);
-//   console.log('Correct');
-  alert('Correct! Nice work ' + userFirstName + '!');
-  alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
-  userScore.push(1);
-} else if(kayaking.includes('no')) {
-//   console.log(kayaking);
-//   console.log('Incorrect.');
-  alert('Sorry. That is not correct ' + userFirstName + '.');
-  alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
-  userScore.push(0);
-} else {
-//   console.log(kayaking);
-//   console.log('Invalid Answer');
-  alert('Huh? That\'s not a yes or no answer...');
-  userScore.push(0);
-}
+function haveIKayaked() {
 
+
+
+  if(kayaking.includes('yes') && lovesCoffee.includes('yes') && newZealand.includes('no')) {
+    //   console.log(kayaking);
+    //   console.log('Correct');
+    alert('Wow! Correct!! Again!!! It\'s like you know me already ' + userFirstName + '....');
+    alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
+    userScore.push(1);
+  } else if(kayaking.includes('yes')) {
+    //   console.log(kayaking);
+    //   console.log('Correct');
+    alert('Correct! Nice work ' + userFirstName + '!');
+    alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
+    userScore.push(1);
+  } else if(kayaking.includes('no')) {
+    //   console.log(kayaking);
+    //   console.log('Incorrect.');
+    alert('Sorry. That is not correct ' + userFirstName + '.');
+    alert('I once crossed the Puget Sound from Marysville to Beverly Beach on Whidby Island. It took over 8 hours round trip!');
+    userScore.push(0);
+  } else {
+    //   console.log(kayaking);
+    //   console.log('Invalid Answer');
+    alert('Huh? That\'s not a yes or no answer...');
+  // userScore.push(0);
+  }
+}
 var attendedCollegeInArizona = prompt('Did I study at University in California?');
 attendedCollegeInArizona = attendedCollegeInArizona.toLowerCase();
 
@@ -111,12 +127,12 @@ if(attendedCollegeInArizona.includes('no') && kayaking.includes('yes') && lovesC
 //   console.log('Incorrect.');
   alert('Sorry. That is not correct ' + userFirstName + '.');
   alert('I have not yet done any studying in California. I attended the University of Arizona in Tucson, AZ. Go Wildcats!');
-  userScore.push(0);
+  // userScore.push(0);
 } else {
   //console.log(attendedCollegeInArizona);
   //console.log('Invalid Answer');
   alert('Huh? That\'s not a yes or no answer...');
-  userScore.push(0);
+  // userScore.push(0);
 }
 
 
@@ -140,12 +156,12 @@ if(lengthOfEmployment.includes('yes') && attendedCollegeInArizona.includes('no')
 //   console.log('Incorrect.');
   alert('Sorry. That is not correct ' + userFirstName + '.');
   alert('I have been employed with TJMaxx for 11 years. Full time for 7 years and in management for 5 years.');
-  userScore.push(0);
+  // userScore.push(0);
 } else {
 //   console.log(lengthOfEmployment);
 //   console.log('Invalid Answer');
   alert('Huh? That\'s not a yes or no answer...');
-  userScore.push(0);
+  // userScore.push(0);
   //counter++; you could make a var counter that adds one to the score when answered correctly.
 }
 
@@ -168,7 +184,7 @@ for(var i = 0; i < 4; i++) {
   } else {
     alert('Very close! A little too low.');
     console.log('too low');
-    userScore.push(0);
+    // userScore.push(0);
   }
   // if(i === 4) {
   //   console.log('zero score');
@@ -219,7 +235,7 @@ for(var y = 0; y < 6; y++) {
   } else {
     console.log('sorry incorrect');
     alert('Sorry. That is not correct ' + userFirstName + '. ' + (5 - y) + ' chances remaining.');
-    userScore.push(0);
+    // userScore.push(0);
   }
 //   // if(i === 4) {
 //   //   console.log('zero score');
@@ -228,6 +244,10 @@ for(var y = 0; y < 6; y++) {
 }
 
 alert('I have been to six countries other than The United States. I have been to Korea, China, Germany, Croatia, Canada and Mexico. China was my favorite!');
+
+doILikeCoffee();
+iWasBorn();
+haveIKayaked();
 
 var totalScore = 0;
 
@@ -241,4 +261,8 @@ if(totalScore === 7) {
   alert('PERFECT SCORE! CONGRATULATIONS!');
 }
 
+
+
 alert('Hope you enjoyed the game ' + userFirstName + ' and welcome again to my webpage!');
+
+
