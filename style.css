@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(80, 78, 231);
+    background-color: rgb(126, 126, 128);
     font-family: sans-serif;
 }
 h1 {
@@ -31,4 +31,13 @@ p.topfoot {
 p.foot {
     text-align: center;
     padding-left: 0px;
+}
+ol {
+    margin-left: 46%;
+    margin-right: 35%;
+}
+ul {
+    margin-left: 33%;
+    margin-right: 33%;
+    text-align: center;
 }
