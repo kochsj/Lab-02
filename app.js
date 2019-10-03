@@ -216,12 +216,13 @@ for(var y = 0; y < 6; y++) {
     alert('Sorry. That is not correct ' + userFirstName + '. ' + (5 - y) + ' chances remaining.');
     userScore.push(0);
   }
-
   // if(i === 4) {
   //   console.log('zero score');
   //   userScore.push(0);
   // }
 }
+
+alert('I have been to six countries other than The United States. I have been to Korea, China, Germany, Croatia, Canada and Mexico. China was my favorite!');
 
 var totalScore = 0;
 
