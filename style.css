@@ -20,6 +20,7 @@ nav {
   border-top: solid black 15px;
   text-align: center;
   padding: 25px;
+  padding-top:50px;
 }
 
 aside {
@@ -30,6 +31,7 @@ aside {
   background-color:rgba(243, 99, 99, 0.815);
   border-top: solid black 15px;
   padding: 25px;
+  padding-top:50px;
 }
 
 body {
@@ -82,10 +84,11 @@ img {
 
 nav img {
   width: 200px;
+  border: black solid 5px;
 }
 
 div.image {
-  margin-top:50px;
+  margin-top:80px;
 }
 
 .heading {
@@ -95,9 +98,13 @@ div.image {
 
 .List {
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .listspacing {
   margin-bottom:20px;
+}
+
+footer {
+  margin-top: 30px;
 }
