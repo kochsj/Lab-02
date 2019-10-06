@@ -34,7 +34,10 @@ function doILikeCoffee() {
   } else {
     //   console.log(lovesCoffee);
     //   console.log('Invalid Answer');
-    alert('Huh? That\'s not a yes or no answer...');
+    alert('Huh? That\'s not a yes or no answer... Please try again.');
+    lovesCoffee = prompt('Do I like coffee?');
+    lovesCoffee = lovesCoffee.toLowerCase();
+    doILikeCoffee();
     // userScore.push(0);
   }
 }
@@ -69,7 +72,10 @@ function iWasBorn() {
   } else {
     //   console.log(newZealand);
     //   console.log('Invalid Answer');
-    alert('Huh? That\'s not a yes or no answer...');
+    alert('Huh? That\'s not a yes or no answer... Please try again.');
+    newZealand = prompt('Was I born in New Zealand?');
+    newZealand = newZealand.toLowerCase();
+    iWasBorn();
     // userScore.push(0);
   }
 }
@@ -104,7 +110,10 @@ function haveIKayaked() {
   } else {
     //   console.log(kayaking);
     //   console.log('Invalid Answer');
-    alert('Huh? That\'s not a yes or no answer...');
+    alert('Huh? That\'s not a yes or no answer... Please try again.');
+    kayaking = prompt('Have I kayaked across the Puget Sound?');
+    kayaking = kayaking.toLowerCase();
+    haveIKayaked();
     // userScore.push(0);
   }
 }
@@ -139,7 +148,10 @@ function studyAtUniversity() {
   } else {
     //console.log(attendedCollegeInArizona);
     //console.log('Invalid Answer');
-    alert('Huh? That\'s not a yes or no answer...');
+    alert('Huh? That\'s not a yes or no answer... Please try again.');
+    attendedCollegeInArizona = prompt('Did I study at University in California?');
+    attendedCollegeInArizona = attendedCollegeInArizona.toLowerCase();
+    studyAtUniversity();
     // userScore.push(0);
   }
 }
@@ -172,7 +184,10 @@ function employmentLength() {
   } else {
     //   console.log(lengthOfEmployment);
     //   console.log('Invalid Answer');
-    alert('Huh? That\'s not a yes or no answer...');
+    alert('Huh? That\'s not a yes or no answer... Please try again.');
+    lengthOfEmployment = prompt('Have I been employed with any company for over 10 years?');
+    lengthOfEmployment = lengthOfEmployment.toLowerCase();
+    employmentLength();
     // userScore.push(0);
     //counter++; you could make a var counter that adds one to the score when answered correctly.
   }
