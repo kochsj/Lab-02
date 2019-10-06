@@ -1,43 +1,41 @@
-html {
-    background-color: rgb(126, 126, 128);
-    font-family: sans-serif;
+p, nav, header, article, aside{ 
+    border: solid black 3px;
 }
-h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    color: snow;
-    padding: 100px;
+
+article {
+  display: inline-block;
+  width: 68%;
+  height: 1000px;
 }
-h2 {
-    text-align: center;
-    padding-bottom: 22px;
-    padding-top: 22px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 28px;
+
+nav {
+  display: inline-block;
+  width: 15%;
 }
-p {
-    padding-left: 15px;
-    line-height: 25px;
+
+aside {
+  display: inline-block;
+  width: 15%;
+  background-color:snow;
 }
-p.topfoot {
-    text-align: center;
-    padding-top: 100px;
-    padding-left: 0px;
-    color: snow;
-    text-decoration: underline;
+
+body {
+  width: 100%;
 }
-p.foot {
-    text-align: center;
-    padding-left: 0px;
+
+#second {
+  background-color:snow;
+  margin-right:40px;
 }
-ol {
-    margin-left: 46%;
-    margin-right: 35%;
+
+body {
+  background-color:rgb(243, 99, 99);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-ul {
-    margin-left: 33%;
-    margin-right: 33%;
+
+header {
+    background-color: black;
+    font-size: 80px;
+    color: rgb(243, 99, 99);
     text-align: center;
 }
