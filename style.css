@@ -4,7 +4,7 @@ p, nav, header, article, aside{
 
 article {
   display: inline-block;
-  width: 67%;
+  width: 65%;
   height: 1000px;
   float: left;
   background-color:black;
