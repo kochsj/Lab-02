@@ -79,11 +79,11 @@ p.foot {
 }
 
 img {
-  width: 1120px;
+  width: 100%;
   }
 
 nav img {
-  width: 200px;
+  width: 95%;
   border: black solid 5px;
 }
 
